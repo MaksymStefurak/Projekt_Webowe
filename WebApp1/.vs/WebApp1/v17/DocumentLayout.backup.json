@@ -1,0 +1,222 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Webapp1\\WebApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\views\\home\\forecasts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\views\\home\\forecasts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\views\\home\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\views\\home\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\views\\home\\cryptotransaction.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\views\\home\\cryptotransaction.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|d:\\webapp1\\webapp1\\webapp1\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2988C0E-8EE0-46F0-96FB-8538B71C1944}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CryptoTransaction.cshtml",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\CryptoTransaction.cshtml",
+              "RelativeDocumentMoniker": "WebApp1\\Views\\Home\\CryptoTransaction.cshtml",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\CryptoTransaction.cshtml",
+              "RelativeToolTip": "WebApp1\\Views\\Home\\CryptoTransaction.cshtml",
+              "ViewState": "AgIAAFYBAAAAAAAAAAAAAHYBAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T15:42:39.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Forecasts.cshtml",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\Forecasts.cshtml",
+              "RelativeDocumentMoniker": "WebApp1\\Views\\Home\\Forecasts.cshtml",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\Forecasts.cshtml*",
+              "RelativeToolTip": "WebApp1\\Views\\Home\\Forecasts.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T16:16:33.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApp1\\Program.cs",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Program.cs*",
+              "RelativeToolTip": "WebApp1\\Program.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T15:35:51.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "WebApp1\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\wwwroot\\js\\site.js*",
+              "RelativeToolTip": "WebApp1\\wwwroot\\js\\site.js*",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAYwFUAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-19T15:17:21.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WebApp1\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\wwwroot\\css\\site.css*",
+              "RelativeToolTip": "WebApp1\\wwwroot\\css\\site.css*",
+              "ViewState": "AgIAACsCAAAAAAAAAAAAACACAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-19T15:15:59.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "WebApp1\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "WebApp1\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T15:15:43.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApp1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebApp1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T15:15:39.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Favorites.cshtml",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\Favorites.cshtml",
+              "RelativeDocumentMoniker": "WebApp1\\Views\\Home\\Favorites.cshtml",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Home\\Favorites.cshtml",
+              "RelativeToolTip": "WebApp1\\Views\\Home\\Favorites.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T15:15:24.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApp1\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApp1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T15:13:25.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApp1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "WebApp1\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T15:13:07.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "WebApp1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "WebApp1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T17:37:47.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebApp1\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\Webapp1\\WebApp1\\WebApp1\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebApp1\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T17:39:10.781Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

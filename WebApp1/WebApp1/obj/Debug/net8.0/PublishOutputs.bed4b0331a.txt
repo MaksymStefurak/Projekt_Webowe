@@ -1,0 +1,7 @@
+D:\Webapp1\WebApp1\WebApp1\obj\Debug\net8.0\PubTmp\Out\WebApp1.exe
+D:\Webapp1\WebApp1\WebApp1\obj\Debug\net8.0\PubTmp\Out\appsettings.Development.json
+D:\Webapp1\WebApp1\WebApp1\obj\Debug\net8.0\PubTmp\Out\appsettings.json
+D:\Webapp1\WebApp1\WebApp1\obj\Debug\net8.0\PubTmp\Out\WebApp1.dll
+D:\Webapp1\WebApp1\WebApp1\obj\Debug\net8.0\PubTmp\Out\WebApp1.deps.json
+D:\Webapp1\WebApp1\WebApp1\obj\Debug\net8.0\PubTmp\Out\WebApp1.runtimeconfig.json
+D:\Webapp1\WebApp1\WebApp1\obj\Debug\net8.0\PubTmp\Out\WebApp1.pdb

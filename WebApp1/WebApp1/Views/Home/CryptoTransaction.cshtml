@@ -1,0 +1,375 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+
+<div id="top-right-info">
+    <span>Баланс: <span id="userBalance">$1000</span> USD</span>
+</div>
+
+<div id="cryptoTradingSection">
+    <label for="cryptoSelector">Виберіть криптовалюту:</label>
+    <div id="cryptoWithLogo">
+        <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" id="selectedCryptoLogo" alt="Crypto Logo" style="width: 30px; height: 30px; margin-right: 10px;">
+        <select id="cryptoSelector">
+            <option value="bitcoin" data-logo="https://cryptologos.cc/logos/bitcoin-btc-logo.png">Bitcoin - $45000</option>
+            <option value="ethereum" data-logo="https://cryptologos.cc/logos/ethereum-eth-logo.png">Ethereum - $3000</option>
+            <option value="cardano" data-logo="https://cryptologos.cc/logos/cardano-ada-logo.png">Cardano - $1.50</option>
+        </select>
+    </div>
+
+    <button id="buyButton">Купити</button>
+    <button id="sellButton">Продати</button>
+</div>
+
+<div id="buyModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeBuyModal">&times;</span>
+        <h3>Купити криптовалюту</h3>
+        <p id="cryptoAmount">Ваша кількість: <span id="userCryptoAmount">0</span> </p>
+        <div id="buyAmountSection">
+            <label for="buyAmount">Сума для покупки (USD):</label>
+            <input type="number" id="buyAmount" placeholder="Введіть суму" />
+        </div>
+        <button id="confirmBuyButton">Підтвердити покупку</button>
+    </div>
+</div>
+
+<div id="sellModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeSellModal">&times;</span>
+        <h3>Продати криптовалюту</h3>
+        <p id="cryptoAmountSell">Ваша кількість: <span id="userCryptoAmountSell">0</span> </p>
+        <div id="sellAmountSection">
+            <label for="sellAmount">Кількість криптовалюти для продажу:</label>
+            <input type="number" id="sellAmount" placeholder="Введіть кількість" />
+        </div>
+        <button id="confirmSellButton">Підтвердити продаж</button>
+    </div>
+</div>
+
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.9); 
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    color: #fff; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+#cryptoForm {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #444;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); 
+}
+
+
+input, select, textarea {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+
+button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+
+button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-3px);
+}
+
+
+button:active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: ripple 0.6s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+
+#cryptoTradingSection {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    width: 400px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+#cryptoTradingSection input,
+#cryptoTradingSection select {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+
+#cryptoTradingSection button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+#cryptoTradingSection button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-3px);
+}
+
+
+#cryptoTradingSection button:active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: ripple 0.6s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+    #top-right-info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white; 
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #cryptoTradingSection {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        width: 400px;
+        margin: 0 auto;
+        color: #fff;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    var userBitcoin = 0.00000000; 
+    var userEthereum = 0.00000000; 
+    var userCardano = 0.00000000; 
+
+ 
+    var selectedCrypto = 'bitcoin'; 
+
+   
+    var cryptoPrices = {
+        bitcoin: 45000, 
+        ethereum: 3000,
+        cardano: 1.50
+    };
+
+    // Оновлення кількості криптовалюти в модальних вікнах
+    function updateCryptoAmount() {
+        if (selectedCrypto === 'bitcoin') {
+            $("#userCryptoAmount").text(parseFloat(userBitcoin).toFixed(8) + ' BTC');
+            $("#userCryptoAmountSell").text(parseFloat(userBitcoin).toFixed(8) + ' BTC');
+        } else if (selectedCrypto === 'ethereum') {
+            $("#userCryptoAmount").text(parseFloat(userEthereum).toFixed(8) + ' ETH');
+            $("#userCryptoAmountSell").text(parseFloat(userEthereum).toFixed(8) + ' ETH');
+        } else if (selectedCrypto === 'cardano') {
+            $("#userCryptoAmount").text(parseFloat(userCardano).toFixed(8) + ' ADA');
+            $("#userCryptoAmountSell").text(parseFloat(userCardano).toFixed(8) + ' ADA');
+        }
+    }
+
+    // Оновлення балансу користувача
+    function updateBalance(newBalance) {
+        $("#userBalance").text('$' + newBalance.toFixed(2));
+    }
+
+    // Функція для отримання цін із CoinGecko API
+    function fetchCryptoPrices() {
+        $.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,cardano&vs_currencies=usd", function (data) {
+            // Оновлення цін у глобальному об'єкті
+            cryptoPrices.bitcoin = data.bitcoin.usd;
+            cryptoPrices.ethereum = data.ethereum.usd;
+            cryptoPrices.cardano = data.cardano.usd;
+
+            // Оновлення вибору криптовалюти
+            $("#cryptoSelector").html(`
+                        <option value="bitcoin" data-logo="https://cryptologos.cc/logos/bitcoin-btc-logo.png">Bitcoin - $${cryptoPrices.bitcoin}</option>
+                        <option value="ethereum" data-logo="https://cryptologos.cc/logos/ethereum-eth-logo.png">Ethereum - $${cryptoPrices.ethereum}</option>
+                        <option value="cardano" data-logo="https://cryptologos.cc/logos/cardano-ada-logo.png">Cardano - $${cryptoPrices.cardano}</option>
+                    `);
+            updateLogo(); // Оновити лого
+        });
+    }
+
+    // Відображення лого вибраної криптовалюти
+    function updateLogo() {
+        var selectedOption = $("#cryptoSelector option:selected");
+        var logoUrl = selectedOption.data("logo");
+        $("#selectedCryptoLogo").attr("src", logoUrl);
+    }
+
+    // Відкриття модальних вікон
+    $("#buyButton").click(function () {
+        selectedCrypto = $("#cryptoSelector").val(); 
+        $("#buyModal").css("display", "block");
+        updateCryptoAmount();
+    });
+
+    $("#sellButton").click(function () {
+        selectedCrypto = $("#cryptoSelector").val(); 
+        $("#sellModal").css("display", "block");
+        updateCryptoAmount();
+    });
+
+    // Закриття модальних вікон
+    $("#closeBuyModal").click(function () {
+        $("#buyModal").css("display", "none");
+    });
+
+    $("#closeSellModal").click(function () {
+        $("#sellModal").css("display", "none");
+    });
+
+    // Обробка покупки
+    $("#confirmBuyButton").click(function () {
+        var amount = parseFloat($("#buyAmount").val());
+        if (isNaN(amount) || amount <= 0) {
+            alert("Будь ласка, введіть коректну суму для покупки.");
+            return;
+        }
+        var balance = parseFloat($("#userBalance").text().replace('$', ''));
+        if (amount > balance) {
+            alert("Недостатньо коштів для покупки.");
+        } else {
+            // Оновлення балансу після покупки
+            balance -= amount;
+            updateBalance(balance);
+
+            // Оновлення кількості криптовалюти
+            if (selectedCrypto === 'bitcoin') {
+                userBitcoin += amount / cryptoPrices.bitcoin;
+            } else if (selectedCrypto === 'ethereum') {
+                userEthereum += amount / cryptoPrices.ethereum;
+            } else if (selectedCrypto === 'cardano') {
+                userCardano += amount / cryptoPrices.cardano;
+            }
+            updateCryptoAmount();
+
+            alert("Ви успішно купили криптовалюту!");
+            $("#buyModal").css("display", "none");
+        }
+    });
+
+    // Обробка продажу
+    $("#confirmSellButton").click(function () {
+        var amount = parseFloat($("#sellAmount").val());
+        if (isNaN(amount) || amount <= 0) {
+            alert("Будь ласка, введіть коректну кількість для продажу.");
+            return;
+        }
+        var balance = parseFloat($("#userBalance").text().replace('$', ''));
+        if (selectedCrypto === 'bitcoin') {
+            if (amount > userBitcoin) {
+                alert("У вас недостатньо біткоїнів для продажу.");
+            } else {
+                balance += amount * cryptoPrices.bitcoin;
+                updateBalance(balance);
+                userBitcoin -= amount;
+                updateCryptoAmount();
+                alert("Ви успішно продали криптовалюту!");
+                $("#sellModal").css("display", "none");
+            }
+        } else if (selectedCrypto === 'ethereum') {
+            if (amount > userEthereum) {
+                alert("У вас недостатньо ефіру для продажу.");
+            } else {
+                balance += amount * cryptoPrices.ethereum;
+                updateBalance(balance);
+                userEthereum -= amount;
+                updateCryptoAmount();
+                alert("Ви успішно продали криптовалюту!");
+                $("#sellModal").css("display", "none");
+            }
+        } else if (selectedCrypto === 'cardano') {
+            if (amount > userCardano) {
+                alert("У вас недостатньо кардано для продажу.");
+            } else {
+                balance += amount * cryptoPrices.cardano;
+                updateBalance(balance);
+                userCardano -= amount;
+                updateCryptoAmount();
+                alert("Ви успішно продали криптовалюту!");
+                $("#sellModal").css("display", "none");
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        fetchCryptoPrices();
+        setInterval(fetchCryptoPrices, 60000);
+        $("#cryptoSelector").change(updateLogo);
+    });
+</script>
