@@ -1,1 +1,34 @@
-wqeqweqw
+Wymagania
+Aby uruchomić projekt lokalnie, będziesz potrzebować:
+
+.NET SDK (wersja 8.0) – do tworzenia i uruchamiania projektów ASP.NET.
+Pobierz .NET SDK
+Microsoft SQL Server (lub inna baza danych, której używa projekt):
+
+Pobierz i skonfiguruj Microsoft SQL Server (lub inną bazę danych używaną przez projekt).
+IDE do programowania (Visual Studio lub Visual Studio Code):
+
+Zaleca się używanie Visual Studio dla wygody, ale możliwe jest również używanie Visual Studio Code z odpowiednimi wtyczkami.
+Instalacja i konfiguracja
+Sklonuj repozytorium
+
+Skorzystaj z poniższej komendy, aby sklonować repozytorium na swoje lokalne urządzenie:
+git clone i adress reposytoriumu
+
+Zainstaluj niezbędne pakiety
+Jeśli projekt korzysta z pakietów NuGet, będą one automatycznie pobierane po otwarciu projektu w Visual Studio. Jeśli używasz innego IDE, uruchom poniższą komendę:
+dotnet restore
+Uruchomienie projektu
+Otwórz projekt w IDE:
+
+Jeśli używasz Visual Studio, otwórz plik projektu .sln:
+Otwórz Visual Studio.
+Wybierz Open Project i wskaż plik .sln.
+
+Jeśli używasz Visual Studio Code, po prostu otwórz folder zawierający projekt.
+Uruchom projekt:
+W Visual Studio, kliknij przycisk Start lub naciśnij F5, aby uruchomić projekt.
+W Visual Studio Code:
+Otwórz terminal w VS Code.
+Uruchom komendę:
+dotnet run
